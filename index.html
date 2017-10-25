@@ -3,22 +3,16 @@
   <head>
     <script>
       var col = prompt("Choose a color");
-      canvas = document.getELementbyID("can");
-  ctx = canvas.getContext("2d");
-  class rectangle{
-  constructor(x, y, width, height, color)
-  x = this.x;
-  y = this.y
-  width = this.width
-  height = this.height
-  color = this.color
-  ctx.fillStyle = this.color;
-  ctx.fillRect(this.x, this.y, this.width, this.height)
-      }
-new rectangle(400, 400, 40, 40, col);</script>
+      txt = document.getElementbyID("chag").innerHTML
+      
+      function chage(){
+      txt.style.color = col;
+      }     
+  </script>
   </head>
  <body>
- <p style = "font-size: 50px; text-align: center"> Some Testing here</p>
-  <canvas id = "can" width = "600" height = "600"></canvas>
+ <p style = "font-size: 50px; text-align: center" id = "txt"> Some Testing here</p>
+  <button onClick = "chage()">CLICK ME</button>
+   <canvas id = "can" width = "600" height = "600"></canvas>
  </body>
  </html>
