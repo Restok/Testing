@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>canvas = document.getELementbyID("can")
-ctx = canvas.getContext("2d")
-class rectangle
-constructor(x, y, width, height, color)
-x = this.x
-y = this.y
-width = this.width
-height = this.height
-color = this.color
-ctx.fillStyle = this.color
-ctx.fillRect(this.x, this.y, this.width, this.height)
-
-new rectangle(400, 400, 40, 40);/script>
+    <script>
+      var col = prompt("Choose a color");
+      canvas = document.getELementbyID("can");
+  ctx = canvas.getContext("2d");
+  class rectangle{
+  constructor(x, y, width, height, color)
+  x = this.x;
+  y = this.y
+  width = this.width
+  height = this.height
+  color = this.color
+  ctx.fillStyle = this.color;
+  ctx.fillRect(this.x, this.y, this.width, this.height)
+      }
+new rectangle(400, 400, 40, 40, col);/script>
   </head>
  <body>
  <p style = "font-size: 50px; text-align: center"> Some Testing here</p>
