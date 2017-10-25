@@ -3,11 +3,16 @@
   <head>
     <script>
       var col = prompt("Choose a color");
-      txt = document.getElementbyID("chag").innerHTML
+      var coll = prompt("choose bg color");
+      txt = document.getElementbyID("chag").innerHTML;
+      bg = document.body.innerHTML;
       
       function chage(){
       txt.style.color = col;
-      }     
+      }
+      function change(){
+      bg.style.backgroundColor = coll;
+      }
   </script>
   </head>
  <body>
