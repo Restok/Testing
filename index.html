@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>var hi = prompt("Hello World!")</script>
+    <script>canvas = document.getELementbyID("can")
+ctx = canvas.getContext("2d")
+class rectangle
+constructor(x, y, width, height, color)
+x = this.x
+y = this.y
+width = this.width
+height = this.height
+color = this.color
+ctx.fillStyle = this.color
+ctx.fillRect(this.x, this.y, this.width, this.height)
+
+new rectangle(400, 400, 40, 40);/script>
   </head>
  <body>
  <p style = "font-size: 50px; text-align: center"> Some Testing here</p>
-  <canvas id = "can" width = "600" height = "10" style = "position:absolute; left: 100px; color: red;"></canvas>
+  <canvas id = "can" width = "600" height = "600"></canvas>
  </body>
  </html>
